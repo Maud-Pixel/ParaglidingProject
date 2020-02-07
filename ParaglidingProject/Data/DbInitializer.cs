@@ -45,6 +45,39 @@ namespace ParaglidingProject.Data
             }
 
             context.SaveChanges();
+
+            var licenses = new License[]
+            {
+                new License{Title="Pilote de parapente"},
+                new License{Title="Pilote XC de parapente"},
+                new License{Title="Moniteur de parapente"},
+                new License{Title="Pilote au treuil de parapente"},
+                new License{Title="Examinateur de parapente"}
+            };
+
+            foreach(License l in licenses)
+            {
+                context.Licenses.Add(l);
+            }
+
+            context.SaveChanges();
+
+            var courses = new Course[]
+            {
+                new Course{StartDate=DateTime.Parse("2018-04-29"), EndDate=DateTime.Parse("2018-05-30")},
+                new Course{StartDate=DateTime.Parse("2018-06-18"), EndDate=DateTime.Parse("2018-07-10")},
+                new Course{StartDate=DateTime.Parse("2018-09-15"), EndDate=DateTime.Parse("2018-11-12")},
+                new Course{StartDate=DateTime.Parse("2019-01-15"), EndDate=DateTime.Parse("2019-03-20")},
+                new Course{StartDate=DateTime.Parse("2019-05-25"), EndDate=DateTime.Parse("2019-07-19")},
+                new Course{StartDate=DateTime.Parse("2019-10-02"), EndDate=DateTime.Parse("2019-12-23")}
+            };
+
+            foreach(Course c in courses)
+            {
+                context.Courses.Add(c);
+            }
+
+            context.SaveChanges();
         }
     }
 }
