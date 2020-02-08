@@ -14,7 +14,7 @@ namespace ParaglidingProject.Models
         public int ParaglidingID { get; set; }
         public DateTime FlightDate { get; set; }
 
-        public DateTime FlightDuration { get; set; }
+        public float FlightDuration { get; set; }
 
         public Pilot Pilot { get; set; }
 
