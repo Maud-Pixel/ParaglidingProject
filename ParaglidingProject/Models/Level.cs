@@ -11,5 +11,6 @@ namespace ParaglidingProject.Models
         public string Name { get; set; }
         public ICollection<string> Skills { get; set; }
         public ICollection<License> Licenses { get; set; }
+        public ICollection<LandingSite> LandingSite { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace ParaglidingProject.Models
         public string Name { get; set; }
         public string Orientation { get; set; }
         public string DescriptionAproach { get; set; }
-        public int RequiseLevel { get; set; }
-        public ICollection<Landing> Landings { get; set; }
+        public ICollection<Flight> Flights { get; set; }
+        public Level RequiseLevel { get; set; }
     }
 }

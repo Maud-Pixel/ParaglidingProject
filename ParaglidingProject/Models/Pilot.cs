@@ -24,10 +24,9 @@ namespace ParaglidingProject.Models
         public int Weight { get; set; }
 
         public Role? Role { get; set; }
+        public Level Level { get; set; }
 
         public ICollection<Flight> Flights { get; set; }
-        public ICollection<Landing> Landings { get; set; }
-        public ICollection<TakeOff> TakeOffs { get; set; }
         public ICollection<Payment> Payments { get; set; }
         public ICollection<Participation> Participations { get; set; }
         public ICollection<Teaching> Teachings { get; set; }

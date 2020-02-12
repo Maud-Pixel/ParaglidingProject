@@ -11,5 +11,6 @@ namespace ParaglidingProject.Models
         public DateTime DateOfCommissioning { get; set; }
         public DateTime DateOfLastRevision { get; set; }
         public ModelParagliding ModelParagliding { get; set; }
+        public ICollection<Flight> Flights { get; set; }
     }
 }
