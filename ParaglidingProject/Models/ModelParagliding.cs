@@ -7,7 +7,7 @@ namespace ParaglidingProject.Models
 {
     public class ModelParagliding
     {
-        public int ModelParaglidingID { get; set; }
+        public int ID { get; set; }
         public string HeightParagliding { get; set; }
         public int MaxWeightPilot { get; set; }
         public int MinWeightPilot { get; set; }

@@ -7,10 +7,11 @@ namespace ParaglidingProject.Models
 {
     public class LandingSite
     {
-        public int LandingSiteID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Orientation { get; set; }
         public string DescriptionAproach { get; set; }
+        public int LevelID { get; set; }
         public ICollection<Flight> Flights { get; set; }
         public Level RequiseLevel { get; set; }
     }

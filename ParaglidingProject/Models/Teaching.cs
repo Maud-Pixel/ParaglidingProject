@@ -7,7 +7,7 @@ namespace ParaglidingProject.Models
 {
     public class Teaching
     {
-        public int TeachingID { get; set; }
+        public int ID { get; set; }
         public int PilotID { get; set; }
         public int CourseID { get; set; }
         public ICollection<Pilot> Pilots { get; set; }

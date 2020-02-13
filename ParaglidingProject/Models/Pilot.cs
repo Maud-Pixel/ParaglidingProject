@@ -13,7 +13,7 @@ namespace ParaglidingProject.Models
     }
     public class Pilot
     {
-        public int PilotID { get; set; }
+        public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
@@ -24,6 +24,7 @@ namespace ParaglidingProject.Models
         public int Weight { get; set; }
 
         public Role? Role { get; set; }
+        public int LevelID { get; set; }
         public Level Level { get; set; }
 
         public ICollection<Flight> Flights { get; set; }

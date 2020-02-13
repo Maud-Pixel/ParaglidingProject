@@ -15,7 +15,6 @@ namespace ParaglidingProject.Data
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Flight> Flights { get; set; }
-        public DbSet<Landing> Landings { get; set; }
         public DbSet<LandingSite> LandingSites { get; set; }
         public DbSet<Level> Levels { get; set; }
         public DbSet<License> Licenses { get; set; }
@@ -26,7 +25,6 @@ namespace ParaglidingProject.Data
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Pilot> Pilots { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
-        public DbSet<TakeOff> TakeOffs { get; set; }
         public DbSet<TakeOffSite> TakeOffSites { get; set; }
         public DbSet<Teaching> Teachings { get; set; }
         
@@ -34,7 +32,6 @@ namespace ParaglidingProject.Data
         {
             modelBuilder.Entity<Course>().ToTable("Course");
             modelBuilder.Entity<Flight>().ToTable("Flight");
-            modelBuilder.Entity<Landing>().ToTable("Landing");
             modelBuilder.Entity<LandingSite>().ToTable("LandingSite");
             modelBuilder.Entity<Level>().ToTable("Level");
             modelBuilder.Entity<License>().ToTable("License");
@@ -45,7 +42,6 @@ namespace ParaglidingProject.Data
             modelBuilder.Entity<Payment>().ToTable("Payment");
             modelBuilder.Entity<Pilot>().ToTable("Pilot");
             modelBuilder.Entity<Subscription>().ToTable("Subscription");
-            modelBuilder.Entity<TakeOff>().ToTable("TakeOff");
             modelBuilder.Entity<TakeOffSite>().ToTable("TakeOffSite");
             modelBuilder.Entity<Teaching>().ToTable("Teaching");
 
