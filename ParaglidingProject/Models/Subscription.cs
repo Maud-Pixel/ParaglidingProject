@@ -7,7 +7,7 @@ namespace ParaglidingProject.Models
 {
     public class Subscription
     {
-        public int ID { get; set; }
+        [Key]
         public int Year { get; set; }
         public decimal Price { get; set; }
         public ICollection<Payment> Payments { get; set; }
