@@ -5,12 +5,6 @@ using System.Threading.Tasks;
 
 namespace ParaglidingProject.Models
 {
-    public enum Role
-    {
-        Président,
-        Trésorier,
-        Secrétaire
-    }
     public class Pilot
     {
         public int ID { get; set; }
@@ -23,10 +17,8 @@ namespace ParaglidingProject.Models
 
         public int Weight { get; set; }
 
-        public Role? Role { get; set; }
-        public int LevelID { get; set; }
-        public Level Level { get; set; }
-
+        public Position? Position { get; set; }
+        public bool IsActif { get; set; }
         public ICollection<Flight> Flights { get; set; }
         public ICollection<Payment> Payments { get; set; }
         public ICollection<Participation> Participations { get; set; }

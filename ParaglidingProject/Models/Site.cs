@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace ParaglidingProject.Models
 {
-    public class LandingSite
+    public class Site
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Orientation { get; set; }
-        public string DescriptionAproach { get; set; }
+        public string Orientation { get; set; } // variable type spatial (longitude/latitude)
+        public int? AltitudeTakeOff { get; set; }
+        public string FlyghtType { get; set; }
         public int LevelID { get; set; }
         public ICollection<Flight> Flights { get; set; }
-        public Level RequiseLevel { get; set; }
     }
 }
