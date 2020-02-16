@@ -10,6 +10,7 @@ namespace ParaglidingProject.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Skill { get; set; }
+        public int DifficultyNumber {get; set;}
         public ICollection<License> Licenses { get; set; }
         public ICollection<LandingSite> LandingSite { get; set; }
     }
